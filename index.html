@@ -21,21 +21,21 @@
         <form action="feed.html" class="form-row col-9 col-sm-7 col-md-6 col-lg-auto mx-md-3 pb-4 py-lg-4">
             <h2>Login</h2>
             <label class="ps-0">email</label>
-            <input class="form-control col-lg-6" placeholder="something@this.com">
-            <label class="ps-0">password</label>
-            <input class="form-control" placeholder="password">
+            <input class="form-control col-lg-6"type="email" placeholder="something@this.com" required>
+            <label type="password" class="ps-0">password</label>
+            <input class="form-control" type="password" placeholder="password" required>
             <button type="submit" class="btn btn-success rounded-2 col-3 mt-2 px-0">Login</button>
             <button type="button" class="btn btn-link col-8 col-sm-5 col-md-5 col-lg-8 mx-lg-0 p-0 mt-2">Forgot Password?</button>
         </form>
         <form action="feed.html" class="form-row col-9 col-sm-7 col-md-6 col-lg-auto mx-md-3 py-4">
             <h2 class="text-center p-0">Dont have a user?</h2>
             <label class="ps-0">name</label>
-            <input class="col-7 form-control" placeholder="name">
+            <input class="col-7 form-control" type="text" placeholder="name" required>
             <label class="ps-0">email</label>
-            <input class="form-control" placeholder="something@this.com">
+            <input class="form-control" type="email" placeholder="something@this.com" required>
             <label class="ps-0">password</label>
-            <input class="form-control" placeholder="password">
-            <input type="checkbox" id="agreeTerm" class="col-1 my-2">
+            <input class="form-control" type="password" placeholder="password" required>
+            <input type="checkbox" id="agreeTerm" class="col-1 my-2" required>
             <label for="agreeTerm" class="col-7 p-0 ms-2 m-0 my-2">Terms of service </label>
             <button type="submit" class="btn btn-primary col-6">Register</button>
         </form>
@@ -49,7 +49,7 @@
                 <a class=" text-center col-12 link-dark p-0" href="/profile.html">My profile</a>
             </div>
             <div class="col-4 row align-items-center justify-content-center">
-                <a href="#" class="btn col-3 col-md-2 text-center border-circle bg-primary p-0"> <i class="bi bi-arrow-up text-light"></i></a>            </div>
+                <a href="#" class="btn col-3 col-md-2 text-center rounded-circle bg-primary p-0"> <i class="bi bi-arrow-up text-light"></i></a>            </div>
             <div class="col-4 row">
                 <a href="/settings.html" class=" col-12 text-center link-dark p-0">Settings</a>
             </div>
@@ -58,7 +58,7 @@
             </div>
         </div>
        </footer>
-       <script src="\node_modules\@popperjs\core\dist\umd\popper.min.js"></script>
-       <script src="\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+       <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+       <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
