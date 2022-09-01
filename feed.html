@@ -11,10 +11,25 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
     <header class="row col-12 align-content-center justify-content-center p-0 m-0 align-items-center bg-warning">
-        <a class="d-none d-xl-block col-4 text-dark text-center text-decoration-none" href="profile.html">My profile</a>
-        <div class="col-4 d-xl-none"></div>
-        <a class="col-4 py-2 px-0 text-center text-dark display-4 text-decoration-none" href="feed.html">Join In</a> 
-        <p class="col-4 text-center  m-0">new post</p>
+        <nav class="navbar navbar-expand-lg bg-warning ">
+            <div class="container-fluid">
+                <button class="navbar-toggler col-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <a class="navbar-brand display-1 fs-1 m-0 text-center col-6 order-lg-2 col-lg-4" href="#">Join In</a>
+              <a class="btn btn-link navbar-brand display-2 m-0 col-auto order-lg-3 col-lg-4 text-center" href="#" data-bs-toggle="collapse" aria-expanded="false" aria-controls="newPostSmall" data-bs-target="#newPostSmall">Post +</a>
+              <div class="collapse navbar-collapse order-lg-1 col-lg-4 justify-content-md-center" id="navbar">
+                <ul class="navbar-nav col-md-6">
+                  <li class="nav-item col-md-3">
+                    <a class="nav-link" aria-current="page" href="profile.html">Profile</a>
+                  </li>
+                <form class="d-flex d-lg-none " role="search">
+                  <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
    <main class="d-flex justify-content-center align-content-center m-0">
     <section class="container d-none d-xl-flex align-items-start">
@@ -22,56 +37,61 @@
         <button class="btn btn-primary my-4">Search</button>
     </section>
     <section class="row justify-content-center align-content-center col-12 col-md-10 col-lg-8 col-xl-6 m-0 bg-light">
-        <!--<div class="container row col-12 fixed-bottom">
-            <button class="btn rounded-circle float-end m-2 p-0  col-3" type="button"><img src="/assets/newPost.svg" alt=""></button>
-        </div>-->
+        <div class="container row col-12 d-lg-none fixed-bottom justify-content-end">
+            <button class="btn rounded-circle float-end m-2 bg-primary col-auto"data-bs-toggle="collapse" aria-expanded="false" aria-controls="newPostSmall" data-bs-target="#newPostSmall" type="button"><i class="bi bi-plus text-light fs-2"></i></button>
+        </div>
         <h1 class="display-6 col-10 text-center mt-3">Welcome username, Here is whats new for you</h1>
         <div class="container row m-0 p-0">
            <div class="container col-11 gy-3">
-            <div class="container col-12 border rounded-4 ">
-                <div class="col-12 mb-2">
-                <p class="m-0 mt-2" ><b>Ben says:</b> According to all known laws of aviation, a bee should not be able to fly.</p>
-                </div>
-                    <div class="row col-12 justify-content-between align-content-center align-items-center pb-2 m-0">
+            <form class="collapse d-lg-block" id="newPostSmall" >
+                <p class="display-6">Write post here</p>
+                <textarea class="form-control mh-50 h-50 "name="newPost" maxlength="400" id="newPostProfile" placeholder="Write new Update/post here" cols="50" rows="7" ></textarea>
+                <button class="btn btn-primary m-2 ms-0 col-auto" type="button">+ Add Image</button><button class="btn btn-success m-2 col-auto">Post</button> 
+                </form>
+            <div class="card ">
+                    <div class="card-body">
+                        <p class="m-0 mt-2" ><b>Ben says:</b> According to all known laws of aviation, a bee should not be able to fly.</p>
+                        <div class="d-flex mt-3 justify-content-between">
                         <button type="button" class="btn btn-outline-dark col-3 m-0 px-0">View </button>
-                        <div class="col-6 row justify-content-end p-0">
-                            <p class=" col-5 m-0 p-0">12.55</p>
-                            <p class="col-6 m-0 p-0">30 aug</p>
-                        </div>
+                        <div class="d-flex justify-content-end">
+                            <p class=" m-2 p-0">12.55</p>
+                            <p class=" m-2 p-0">30 aug</p>
+                       </div>
+                       </div>
                         
                     </div>
             </div>
            </div>
            <div class="container col-11 gy-3">
-            <div class="container col-12 border rounded-4 ">
-                <div class="col-12 mb-2">
-                    <p class="m-0 mt-2"><b>Jess uploaded:</b> Just hanging out with my friend</p>
-                    <img src="/assets/trung-thanh-LgdDeuBcgIY-unsplash.jpg" class="img-fluid ">
-                </div>
-                    <div class="row col-12 justify-content-between align-content-center align-items-center pb-2 m-0">
+            <div class="card ">
+                <img src="/assets/trung-thanh-LgdDeuBcgIY-unsplash.jpg" class="img-fluid card-img-top " alt="sample image of two friends hanging out">
+
+                <div class="card-body">
+                    <p class="m-0 mt-1"><b>Jess uploaded:</b> Just hanging out with my friend</p>
+                    <div class="d-flex mt-3 justify-content-between">
                         <button type="button" class="btn btn-outline-dark col-3 m-0 px-0">View </button>
-                        <div class="col-6 row justify-content-end p-0">
-                            <p class="col-5 m-0 p-0">11.05</p>
-                            <p class="col-6 m-0 p-0">29 aug</p>
+                        <div class="d-flex justify-content-end">
+                            <p class="m-2">11.05</p>
+                            <p class="m-2">29 aug</p>
                         </div>
+                        </div>
+
                      
                     </div>
             </div>
             </div>
             <div class="container col-11 gy-3">
-                <div class="container col-12 border rounded-4 ">
-                    <div class="col-12 mb-2">
-                        <p class="m-0 mt-2"><b>mama says:</b> There is no such thing as too much coffee right?</p>
-                    </div>
-                        <div class="row col-12 justify-content-between align-content-center align-items-center pb-2 m-0">
+            <div class="card">
+                        <div class="card-body">
+                            <p class="card-text"><b>mama says:</b> There is no such thing as too much coffee right?</p>
+                            <div class="d-flex mt-3 justify-content-between">
                             <button type="button" class="btn btn-outline-dark col-3 m-0 px-0">View </button>
-                            <div class="col-6 row justify-content-end p-0">
-                                <p class="col-5 m-0 p-0">09.05</p>
-                                <p class="col-6 m-0 p-0">25 aug</p>
+                            <div class="d-flex justify-content-end">
+                                <p class="m-2">09.05</p>
+                                <p class="m-2">25 aug</p>
                             </div>
-                           
                         </div>
-                        </div>
+                    </div>
         </div>
         
         </div>
@@ -80,20 +100,20 @@
     <section class="container d-none  d-xl-flex flex-column align-items-start align-items-xl-center">
         <h2 class="border-bottom border-dark my-4 text-center">Contacts</h2>
         <div class="d-flex flex-column col-12 col-xl-8 align-items-xl-center">
-            <a class="text-decoration-none text-dark" href="#"><img class="rounded-circle col-12 col-md-3 my-xl-2" src="https://picsum.photos/150/150"> @username</a>
-            <a class="text-decoration-none text-dark" href="#"> <img class="rounded-circle col-12 col-md-3 my-xl-2" src="https://picsum.photos/150/150">@username</a>
-            <a class="text-decoration-none text-dark" href="#"> <img class="rounded-circle col-12 col-md-3 my-xl-2" src="https://picsum.photos/150/150">@username</a>
+            <a class="text-decoration-none text-dark" href="#"><img class="rounded-circle col-12 col-md-3 my-xl-2" src="https://picsum.photos/150/150" alt="random filler image for profile picture"> @username</a>
+            <a class="text-decoration-none text-dark" href="#"> <img class="rounded-circle col-12 col-md-3 my-xl-2" src="https://picsum.photos/150/150" alt="random filler image for profile picture">@username</a>
+            <a class="text-decoration-none text-dark" href="#"> <img class="rounded-circle col-12 col-md-3 my-xl-2" src="https://picsum.photos/150/150" alt="random filler image for profile picture">@username</a>
         </div>
         
     </section>  
    </main>
    <footer class="m-0 mt-auto bg-warning row justify-content-center">
-    <div class="row col-12 col-lg-8  p-2 m-0 justify-content-around pt-4">
+    <div class="row col-12 col-lg-8  p-2 m-0 justify-content-around align-items-center pt-4">
         <div class="col-4 row">
             <a class=" text-center col-12 link-dark p-0" href="/profile.html">My profile</a>
         </div>
-        <div class="col-4 row align-items-center justify-content-center">
-            <a href="#" class="btn col-3 col-md-2 text-center rounded-circle bg-primary p-0"> <i class="bi bi-arrow-up text-light"></i></a>
+        <div class="col-auto row align-items-center justify-content-center">
+            <a href="#" class="btn text-center rounded-circle bg-primary"> <i class="bi bi-arrow-up text-light"></i></a>
         </div>
         <div class="col-4 row">
             <a href="/settings.html" class=" col-12 text-center link-dark p-0">Settings</a>
