@@ -9,7 +9,7 @@ https://capable-dusk-443a7f.netlify.app/
 
 ### things to know
 
-contacts on profile.html is a bit off on bigger screen sizes, tried to fix it, have not been successfull yet.
+contacts on profile.html is a wrong on bigger screen sizes, tried to fix it, have not been successfull yet.
 
 because of the layout i put on profile.html, the new post section will appear over new post button rather than under..
 
