@@ -21,11 +21,11 @@
                             <span class="navbar-toggler-icon"></span>
                           </button>
                       <a class="navbar-brand display-1 fs-1 m-0 text-center col-6 order-lg-2 col-lg-4" href="feed.html">Join In</a>
-                      <a class="navbar-brand display-2 m-0 col-auto order-lg-3 col-lg-4 text-center" href="#newPostLarge">Post +</a>
+                      <a class="navbar-brand display-2 m-0 col-auto order-lg-3 col-lg-4 text-center" data-bs-toggle="collapse" aria-expanded="false" aria-controls="newPostLarge" data-bs-target="#newPostLarge" href="#newPostLarge">Post +</a>
                       <div class="collapse navbar-collapse order-lg-1 col-lg-4 justify-content-md-center" id="navbar">
                         <ul class="navbar-nav col-md-6">
                           <li class="nav-item col-md-3">
-                            <a class="nav-link" aria-current="page" href="#">Profile</a>
+                            <a class="nav-link " aria-current="page" href="#">Profile</a>
                           </li>
                         <form class="d-flex d-lg-none " role="search">
                           <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
@@ -38,27 +38,28 @@
 
 
     <main class="row m-0 p-0 mt-xl-4 justify-content-xxl-center">
-        <section class="container row col-xxl-10 m-0 p-0 justify-content-center">
-            <div class="row col-xl-3 justify-content-center">
+        <section class="container  row col-xxl-10 m-0 p-0 justify-content-center">
+            <div class="row order-1 col-xl-3 justify-content-center">
                 <h1 class="text-center">Ben Doe</h1>
-                <img class=" rounded-circle col-6 col-sm-4 col-md-3 col-xl-12 p-xl-4"src="https://picsum.photos/400/400" alt="the users's profile picture, an sample image">
+                <img class=" rounded-circle col-6 col-sm-4 col-md-3 col-xl-12 p-xl-4"src="https://picsum.photos/400/400" data-bs-toggle="modal" data-bs-target="#profilePicture" alt="the users's profile picture, an sample image">
             </div>
-            <form id="newPostLarge" class="collapse d-xl-flex order-4 order-xl-2 d-xl-flex col-12 col-sm-10 col-md-5 col-lg-7 col-xl-6 p-4 m-2 mt-0 pt-0 mb-4 pb-0 row">
+         
+            <form id="newPostLarge" class="collapse d-xl-flex order-3 order-md-4 order-xl-2 d-xl-flex col-12 col-sm-10 col-md-7 col-lg-7 col-xl-6 p-4 m-2 mt-0 pt-0 mb-4 pb-0 row">
                 <p class="display-6">Write post here</p>
                 <textarea class="form-control mh-50 h-50 "name="newPost" maxlength="400" id="newPostProfile" placeholder="Write new Update/post here" cols="50" rows="7" ></textarea>
-                <button class="btn btn-primary m-2 ms-0 col-3" type="button">+ Add Image</button><button class="btn btn-success m-2 col-2">Post</button>
+                <button class="btn btn-primary m-2 ms-0 col-auto" type="button">+ Add Image</button><button class="btn btn-success m-2 col-auto">Post</button>
             </form>
-            <div class="order-xl-1 col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 mt-4 mb-md-4 order-xl-4 px-xl-4">
+            <div class="order-2 order-xl-1 col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 mt-4 mb-md-4 order-xl-4 px-xl-4">
                 <h2>About Ben:</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, tenetur perferendis soluta iusto maxime modi nemo praesentium odio nam distinctio et nihil quam vero odit suscipit, vel similique quae corrupti.</p>
             </div>
-            <div class="col-12 col-sm-10 order-md-4 order-xl-5 col-lg-7 col-xl-6 mt-lg-4 mb-md-4">
+            <div class="col-12 col-sm-10 order-4 order-md-4 order-xl-5 col-lg-7 col-xl-6 mt-lg-4 mb-md-4">
                 <div class="row align-items-center mb-3">
                     <h2 class=" col-6 col-xl-12 text-xl-center my-0">My updates</h2>
                     <div class="container col-6 row align-items-center justify-content-end  d-xl-none">
                         <label class=" fs-4 ms-3 me-0 col-auto" for="newUpdate">New</label>
-                    <button id="newUpdate"type="button" class="col-auto btn btn-primary rounded-circle" data-bs-toggle="collapse" aria-expanded="false" aria-controls="newPostLarge" data-bs-target="#newPostLarge">
-                        <i class="bi bi-plus fs-2"></i>
+                    <button id="newUpdate"type="button" class="col-auto btn btn-primary p-2 rounded-circle" data-bs-toggle="collapse" aria-expanded="false" aria-controls="newPostLarge" data-bs-target="#newPostLarge">
+                        <i class="bi bi-plus  d-flex align-top align-content-center justify-content-center fs-2"></i>
                         </button>
                       
                     </div>
@@ -112,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-10 p-0 mt-lg-4 m-0 order-md-3 order-xl-3 col-md-5 col-lg-4 col-xl-3 row justify-content-around mt-xl-0 mb-md-4">
+            <div class="col-12 col-sm-10 p-0 mt-lg-4 m-0 order-5 order-md-3 order-xl-3 col-md-5 col-lg-4 col-xl-3 row justify-content-around mt-xl-0 mb-md-4">
                <h2 class="text-center mb-3 mb-md-0"> My contacts</h2> 
                <div class="col-4 col-md-8 col-xl-10 col-xxl-12 row my-1 align-items-md-end justify-content-xl-center">
                 <img class="rounded-circle col-12 col-md-3" src="https://picsum.photos/150/150" alt="random filler image for profile picture">
@@ -134,6 +135,16 @@
             <div class="p-0 m-0 d-none d-xl-block order-xl-last col-xl-3">
             </div>
         </section>
+        <div class="modal fade" id="profilePicture" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class=" modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <button type="button" class="btn-close ms-4 mt-4 py-2" data-bs-dismiss="modal"></button>
+                  <img class="rounded p-4"src="https://picsum.photos/400/400" alt="the users's profile picture, an sample image">
+                  <p class=" text-center">Username's profile picture</p>
+                  
+            </div>
+          </div>
+          </div>
     </main>
     <footer class="m-0 mt-auto bg-warning row justify-content-center">
         <div class="row col-12 col-lg-8  p-2 m-0 justify-content-around align-items-center pt-4">
@@ -141,7 +152,7 @@
                 <a class=" text-center col-12 link-dark p-0" href="/profile.html">My profile</a>
             </div>
             <div class="col-auto row align-items-center justify-content-center">
-                <a href="#" class="btn text-center rounded-circle bg-primary"> <i class="bi bi-arrow-up text-light"></i></a>
+                <a href="#" class="btn text-center rounded-circle p-2 bg-primary"> <i class="bi bi-arrow-up d-flex align-top align-content-center justify-content-center text-light"></i></a>
             </div>
             <div class="col-4 row">
                 <a href="/settings.html" class=" col-12 text-center link-dark p-0">Settings</a>
@@ -155,9 +166,6 @@
      <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
    -->
-  
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </html>
