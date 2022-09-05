@@ -34,6 +34,10 @@ Here are some images of how i wanted the site to look like:
 ![How the feed was original thought to look like on pc](./assets/originalIdea/wireframe-feed-pc.png  "PC Feed Wireframe")
 ![How the feed was original thought to look like on tablet](./assets/originalIdea/wireframe-tablet-feed.png "Tablet Feed Wireframe")
 ![How the feed was original thought to look like on mobile](./assets/originalIdea/wireframe-mobile-feed.png "Mobile Feed Wireframe")
+#### a newer version of the feed / how i wanted the posts
+![The almost finished design of the pc feed](./assets/originalIdea/pc-feed.png "Pc Feed newer design")
+![The almost finished design of the tablet feed](./assets/originalIdea/tablet-feed.png "tablet Feed newer design")
+![The almost finished design of the mobile feed](./assets/originalIdea/mobile-feed.png "mobile Feed newer design")
 ### profile:
 ![How the profile was original thought to look like on pc](./assets/originalIdea/profile-pc.png "PC profile Wireframe")
 ![How the profile was original thought to look like on tablet](./assets/originalIdea/tablet-profile.png "tablet profile Wireframe")
