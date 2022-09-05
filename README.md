@@ -27,6 +27,8 @@ The reason the search bar is moved from header to main on pc is because of the l
 ## Original design / wireframe
 
 Here are some images of how i wanted the site to look like:
+
+    first sketched on paper, but are almost the same so not shown.
 ### Login: 
 ![How the login was original thought to look like on pc](./assets/originalIdea/login-pc.png "PC login Wireframe")
 ![How the login was original thought to look like on tablet](./assets/originalIdea/login-tablet.png "tablet login Wireframe")
