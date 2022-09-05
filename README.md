@@ -35,6 +35,7 @@ Here are some images of how i wanted the site to look like:
 ![How the feed was original thought to look like on tablet](./assets/originalIdea/wireframe-tablet-feed.png "Tablet Feed Wireframe")
 ![How the feed was original thought to look like on mobile](./assets/originalIdea/wireframe-mobile-feed.png "Mobile Feed Wireframe")
 #### a newer version of the feed / how i wanted the posts
+The join button and the text over each post was an scratched idea that might be used later. the original plan was to have an social media page that was foccused around joining events and planning them. When that became too complicated i removed some things, and  made it simpler.
 ![The almost finished design of the pc feed](./assets/originalIdea/pc-feed.png "Pc Feed newer design")
 ![The almost finished design of the tablet feed](./assets/originalIdea/tablet-feed.png "tablet Feed newer design")
 ![The almost finished design of the mobile feed](./assets/originalIdea/mobile-feed.png "mobile Feed newer design")
