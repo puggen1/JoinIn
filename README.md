@@ -29,6 +29,8 @@ The reason the search bar is moved from header to main on pc is because of the l
 Here are some images of how i wanted the site to look like:
 
     first sketched on paper, but are almost the same so not shown.
+
+
 ### Login: 
 ![How the login was original thought to look like on pc](./assets/originalIdea/login-pc.png "PC login Wireframe")
 ![How the login was original thought to look like on tablet](./assets/originalIdea/login-tablet.png "tablet login Wireframe")
@@ -47,7 +49,8 @@ The join button and the text over each post was an scratched idea that might be 
 ![How the profile was original thought to look like on tablet](./assets/originalIdea/tablet-profile.png "tablet profile Wireframe")
 ![How the profile was original thought to look like on mobile](./assets/originalIdea/mobile-profile.png "mobile profile Wireframe")
 
-
+Can also be seen here:
+https://www.figma.com/file/rijaqOEkplWILVU6nsKDpQ/Untitled?node-id=0%3A1
 
 ## What is being used
 
